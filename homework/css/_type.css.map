@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,4EAA2D;EACvD,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;;;AAEb,MAAK;EACD,UAAU,EAAE,IAAI;;;AAEpB,CAAC;EACC,eAAe,EAAE,IAAI;;;AAEvB,iBAAiB;EACb,UAAU,EAAE,GAAG",
+"sources": ["../../../../../../%E7%BB%83%E4%B9%A0/%E7%AC%AC%E4%B8%89%E9%98%B6%E6%AE%B5/week2/day1/homework/scss/_type.scss"],
+"names": [],
+"file": "_type.css"
+}

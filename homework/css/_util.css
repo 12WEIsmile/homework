@@ -1,0 +1,33 @@
+#header {
+  height: 29px;
+  line-height: 29px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.l {
+  float: left;
+}
+
+.w {
+  width: 1098px;
+  margin: 0 auto;
+}
+
+.r {
+  float: right;
+}
+
+/*---------header----------*/
+#header .w span {
+  margin-right: 36px;
+}
+
+#header .w .clearance {
+  margin: 0;
+}
+
+#header .w .hdetail .l .item1 {
+  background: url(../img/phone.png) no-repeat 0 center;
+}
+
+/*# sourceMappingURL=_util.css.map */
