@@ -1,0 +1,107 @@
+@import "mixins",
+        "type",
+        "util",
+        "variables";
+body{
+    height: 4900px; 
+    font-family: Microsoft YaHei;   
+}        
+#bd{
+    width:100%;
+    height: 4640px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    clear: both;
+}
+#crumbs{
+    height: 46px;
+    width:1170px;
+    padding: 0 0 0 20px;
+    background: #f4f4f4;
+    line-height: 46px;
+    margin: 0 auto;
+    span{
+        margin: 0 3px 0 0;
+        display: inline-block;
+        a{
+            color: #666;
+            font-size: $font-size-small;
+            padding-right: 2px;
+        }
+    }
+}
+
+#proGoods{
+    height:542px;
+    width: 1190px;
+    margin: 0 auto;
+    background: #fff;
+    margin-bottom: 10px;
+    .y-pro-place{
+        z-index: 11;
+        position: relative;
+        padding: 20px 10px 10px 0;
+        width: 955px;
+    }
+} 
+
+#main-con{
+    height: 3922px;
+    width: 1190px;
+    margin: 0 auto;
+    background-color: #fff;
+    .y-pro-desc{
+        width: 990px;
+        height: 3354px;
+        background: #f00;
+        .desc-car{
+            height: 30px;
+            width: 990px;
+            background-color: #999;
+            .y-desc-addcar{
+                height: 30px;
+                width:131px;
+                background: $link-hover-color url(../img/detail/button_v2.png) no-repeat 0 -350px;
+                cursor: pointer;
+                .shoulder-bag{
+                    height:72px;
+                    width: 295px;
+                    background: #fff;
+                    top:30px;
+                    left:-165px;
+                    border:1px solid #ccc;
+                    box-shadow: -1px 1px 1px #ccc,1px 1px 1px #ccc;
+                    z-index: 200;
+                }                
+            }
+            .mobileBuy{
+                height: 30px;
+                width: 254px;
+                line-height: 30px;
+                background-color: #999;
+                color: #fff;
+                .tabshow-place{
+                    background-position: -147px -70px;
+                }
+                a{
+                    width:148px;
+                    background: url(../img/detail/icon.png) no-repeat 0 -70px;
+                    height: 30px;
+                    .code-weixin{
+                        height: 106px;
+                        width: 116px;
+                        border:1px solid #ccc;
+                        box-shadow: -1px 1px 1px #ccc,1px 1px 1px #ccc;
+                        top:30px;
+                        left:0;
+                        background: #fff;
+                        padding: 15px;
+                        z-index: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+       

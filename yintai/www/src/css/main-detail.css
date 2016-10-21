@@ -1,0 +1,204 @@
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+body, h1, h2, h3, h4, h5, h6, p, ul, li, dl, ol, dd, dt, a, img, input, span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 6400px;
+}
+
+img {
+  border: 0;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e5004f;
+  text-decoration: none;
+}
+
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+.w {
+  width: 1190px;
+  margin: 0 auto !important;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.affix {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+body {
+  height: 4900px;
+  font-family: Microsoft YaHei;
+}
+
+#bd {
+  width: 100%;
+  height: 4640px;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  clear: both;
+}
+
+#crumbs {
+  height: 46px;
+  width: 1170px;
+  padding: 0 0 0 20px;
+  background: #f4f4f4;
+  line-height: 46px;
+  margin: 0 auto;
+}
+#crumbs span {
+  margin: 0 3px 0 0;
+  display: inline-block;
+}
+#crumbs span a {
+  color: #666;
+  font-size: 12px;
+  padding-right: 2px;
+}
+
+#proGoods {
+  height: 542px;
+  width: 1190px;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 10px;
+}
+#proGoods .y-pro-place {
+  z-index: 11;
+  position: relative;
+  padding: 20px 10px 10px 0;
+  width: 955px;
+}
+
+#main-con {
+  height: 3922px;
+  width: 1190px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+#main-con .y-pro-desc {
+  width: 990px;
+  height: 3354px;
+  background: #f00;
+}
+#main-con .y-pro-desc .desc-car {
+  height: 30px;
+  width: 990px;
+  background-color: #999;
+}
+#main-con .y-pro-desc .desc-car .y-desc-addcar {
+  height: 30px;
+  width: 131px;
+  background: #e5004f url(../img/detail/button_v2.png) no-repeat 0 -350px;
+  cursor: pointer;
+}
+#main-con .y-pro-desc .desc-car .y-desc-addcar .shoulder-bag {
+  height: 72px;
+  width: 295px;
+  background: #fff;
+  top: 30px;
+  left: -165px;
+  border: 1px solid #ccc;
+  box-shadow: -1px 1px 1px #ccc,1px 1px 1px #ccc;
+  z-index: 200;
+}
+#main-con .y-pro-desc .desc-car .mobileBuy {
+  height: 30px;
+  width: 254px;
+  line-height: 30px;
+  background-color: #999;
+  color: #fff;
+}
+#main-con .y-pro-desc .desc-car .mobileBuy .tabshow-place {
+  background-position: -147px -70px;
+}
+#main-con .y-pro-desc .desc-car .mobileBuy a {
+  width: 148px;
+  background: url(../img/detail/icon.png) no-repeat 0 -70px;
+  height: 30px;
+}
+#main-con .y-pro-desc .desc-car .mobileBuy a .code-weixin {
+  height: 106px;
+  width: 116px;
+  border: 1px solid #ccc;
+  box-shadow: -1px 1px 1px #ccc,1px 1px 1px #ccc;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  padding: 15px;
+  z-index: 200px;
+}
+
+/*# sourceMappingURL=main-detail.css.map */

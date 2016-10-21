@@ -1,0 +1,43 @@
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+body, h1, h2, h3, h4, h5, h6, p, ul, li, dl, ol, dd, dt, a, img, input, span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 6400px;
+}
+
+img {
+  border: 0;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e5004f;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=_type.css.map */
