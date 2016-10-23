@@ -1,0 +1,52 @@
+@import "variables";
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: #{alpha(opacity=$opacity-ie)};
+}
+@mixin list-unstyled {
+  list-style: none;
+}
+@mixin head-padding{
+    padding: {
+        left:36px;
+        right: 12px;
+    };
+}
+@mixin head-show{
+    height: 152px;
+    width: 124px;
+    background-color: #fff;
+    
+    
+}
+@mixin head-shows{
+    height: 198px;
+    width: 150px;
+    background-color: #fff;
+    
+    
+}
+@mixin head-showl{
+    height: 198px;
+    width: 150px;
+    background-color: #fff;
+    
+    
+}
+@mixin top-logo{
+    display:block;
+    height: 76px;
+    width: 215px;
+}
+@mixin yt-wordcolor{
+    color: $link-hover-color;
+}
+@mixin hover-bordercolor{
+    border-bottom: 5px solid $link-hover-color;
+}
+@mixin hovers-bordercolor{
+    border-bottom: 3px solid $link-hover-color;
+}

@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+/*reset*/
+body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,ol,dd,dt,a,img,input,span{
+    padding: 0 ;
+    margin: 0;
+}
+body{
+    height: 6400px;
+}
+img{
+    border: 0;
+    display: inline-block;
+}
+ul,ol{
+    @include list-unstyled;
+}
+a{
+    color: $link-color;
+    font-size: $font-size-small;
+    text-decoration:none;
+}
+a:hover{
+    color: $link-hover-color;
+    text-decoration:none ;
+}

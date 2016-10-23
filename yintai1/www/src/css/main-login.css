@@ -1,0 +1,325 @@
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+body, h1, h2, h3, h4, h5, h6, p, ul, li, dl, ol, dd, dt, a, img, input, span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 6400px;
+}
+
+img {
+  border: 0;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e5004f;
+  text-decoration: none;
+}
+
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+.w {
+  width: 1190px;
+  margin: 0 auto !important;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.affix {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+body {
+  height: 100%;
+  font-family: Microsoft YaHei;
+}
+
+#register-bd {
+  width: 1190px;
+  margin: 0 auto;
+  height: 460px;
+}
+#register-bd .c-r-bd-re {
+  height: 460px;
+  width: 780px;
+  overflow: hidden;
+  background: #fff;
+}
+#register-bd .c-r-bd-re a {
+  display: block;
+  height: 460px;
+  width: 780px;
+}
+#register-bd .c-r-bd-le {
+  min-height: 460px;
+  width: 320px;
+  border-radius: 3px;
+}
+#register-bd .c-r-bd-le .c-login-head {
+  height: 46px;
+  width: 320px;
+  border-bottom: 1px solid #cdcdcd;
+}
+#register-bd .c-r-bd-le .c-login-head span {
+  height: 45px;
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 45px;
+  cursor: pointer;
+}
+#register-bd .c-r-bd-le .c-login-head .cursor {
+  color: #666;
+}
+#register-bd .c-r-bd-le .c-login-head .scancode {
+  color: #666;
+}
+#register-bd .c-r-bd-le .c-login-head .showbgcolor {
+  background: #e5004f;
+  color: #fff;
+}
+#register-bd .c-r-bd-le .c-login-count {
+  height: 391px;
+  width: 320px;
+  overflow: hidden;
+}
+#register-bd .c-r-bd-le .c-login-num {
+  height: 391px;
+  width: 280px;
+  padding: 0 20px;
+}
+#register-bd .c-r-bd-le .c-login-num .qrcode-login {
+  width: 280px;
+  height: 317px;
+}
+#register-bd .c-r-bd-le .c-login-num .qrcode-login .qrcode-title {
+  height: 17px;
+  width: 280px;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+#register-bd .c-r-bd-le .c-login-num .qrcode-login .qrcode-main {
+  height: 145px;
+  width: 145px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+#register-bd .c-r-bd-le .c-login-num .qrcode-login .qrcode-desc {
+  height: 17px;
+  width: 280px;
+  padding-bottom: 10px;
+  line-height: 17px;
+  text-align: center;
+  color: #ddd;
+  font-size: 14px;
+}
+#register-bd .c-r-bd-le .c-login-num .qrcode-login .qrcode-tip {
+  height: 15px;
+  width: 140px;
+  padding: 0px 1px;
+  border: 1px solid #e5004f;
+  margin: 0 auto;
+  color: #e5004f;
+  text-align: center;
+  font-size: 12px;
+}
+#register-bd .c-r-bd-le .c-login-num .c-r-jump {
+  height: 50px;
+  width: 280px;
+  line-height: 50px;
+  text-align: right;
+  font-size: 14px;
+}
+#register-bd .c-r-bd-le .c-login-num .c-r-jump span a {
+  color: #e5004f;
+  font-size: 12px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm {
+  width: 280px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list {
+  width: 280px;
+  min-height: 66px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .nametxt {
+  width: 268px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  color: #333;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .stress {
+  border: 1px solid #e5004f;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .tips {
+  clear: both;
+  height: 24px;
+  line-height: 22px;
+  color: #999;
+  overflow: hidden;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .tips .wrong {
+  color: #e5004f;
+  font-size: 14px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .othertxt {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  width: 100px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  color: #333;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .delay-alter {
+  width: 126px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .delay-alter img {
+  height: 30px;
+  width: 78px;
+  vertical-align: top;
+  margin-right: 8px;
+  cursor: pointer;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-list .delay-alter span {
+  height: 24px;
+  line-height: 24px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-agree {
+  height: 35px;
+  width: 280px;
+  margin-top: 2px;
+  line-height: 35px;
+  vertical-align: middle;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-agree span {
+  height: 20px;
+  width: 66px;
+  font-size: 12px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-agree span input {
+  vertical-align: middle;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-agree strong {
+  color: #e5004f;
+  font-weight: normal;
+  font-size: 14px;
+}
+#register-bd .c-r-bd-le .c-login-num .loginForm .client-submit {
+  border: none;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 2px;
+  color: #fff;
+  outline: none;
+  vertical-align: top;
+  background-color: #e5004f;
+}
+#register-bd .c-r-bd-le .c-login-num .c-r-cooperate {
+  height: 48px;
+  width: 280px;
+  padding-top: 20px;
+  clear: both;
+}
+#register-bd .c-r-bd-le .c-login-num .c-r-cooperate .cooperate-list {
+  width: 280px;
+  height: 24px;
+  line-height: 24px;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+}
+#register-bd .c-r-bd-le .c-login-num .c-r-cooperate .cooperate-list {
+  height: 24px;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=main-login.css.map */

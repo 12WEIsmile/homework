@@ -1,0 +1,231 @@
+@import "mixins",
+        "type",
+        "util",
+        "variables";
+body{
+    height: 100%; 
+    font-family: Microsoft YaHei;   
+} 
+
+#register-bd{
+    width: 1190px;
+    margin: 0 auto;
+    height: 460px;
+    .c-r-bd-re{
+        height: 460px;
+        width: 780px;
+        overflow: hidden;
+        background: #fff;
+        a{
+            display: block;
+            height: 460px;
+            width: 780px;
+        }
+    }
+    .c-r-bd-le{
+        min-height:460px;
+        width:320px;
+        border-radius: 3px;
+        .c-login-head{
+            height: 46px;
+            width: 320px;
+            border-bottom: 1px solid #cdcdcd;
+            span{
+                height:45px;
+                width: 160px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 45px;
+                cursor: pointer;
+            }
+            .cursor {                
+                color: #666;
+            }
+            .scancode{
+                color: #666;
+            }
+            .showbgcolor{
+              background: $link-hover-color;
+              color: #fff;  
+            }
+   
+        }
+        .c-login-count{
+            height: 391px;
+            width: 320px;
+            overflow: hidden; 
+        }
+        .c-login-num{
+            height: 391px;
+            width: 280px;
+            padding: 0 20px;
+            .qrcode-login{
+                width: 280px;
+                height: 317px;
+                .qrcode-title{
+                    height: 17px;
+                    width: 280px;
+                    padding-top: 40px;
+                    text-align: center;
+                    font-size: 14px;
+                }
+                .qrcode-main{
+                    height: 145px;
+                    width: 145px;
+                    margin:0 auto;
+                    padding-top: 35px;
+                    padding-bottom: 20px;
+                }
+                .qrcode-desc{
+                    height: 17px;
+                    width: 280px;
+                    padding-bottom: 10px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #ddd;
+                    font-size:$font-size-base;
+                }
+                .qrcode-tip{
+                    height: 15px;
+                    width: 140px;
+                    padding: 0px 1px;
+                    border: 1px solid $link-hover-color;
+                    margin: 0 auto;
+                    color: $link-hover-color;
+                    text-align: center;
+                    font-size:$font-size-small;
+                }
+            }
+            .c-r-jump{
+                height: 50px;
+                width: 280px;
+                line-height: 50px;
+                text-align: right;
+                font-size: $font-size-base;
+                span{
+                    a{
+                        color: $link-hover-color;
+                        font-size: $font-size-small;
+                    }
+                }
+            }
+            .loginForm{
+                width: 280px;
+                .client-list{
+                    width: 280px;
+                    min-height: 66px;
+                    .nametxt{
+                        width: 268px;
+                        height: 40px;
+                        line-height: 40px;
+                        padding: 0 5px;
+                        border: 1px solid #ccc;
+                        background-color: #f5f5f5;
+                        color: #333;
+                        outline: none;
+                        border-radius: 2px;
+                        font-size: 14px;
+                    }
+                    .stress{
+                        border: 1px solid $link-hover-color;
+                    }
+                    .tips{
+                        clear: both;
+                        height: 24px;
+                        line-height: 22px;
+                        color: #999;
+                        overflow: hidden;
+                        .wrong{
+                            color: $link-hover-color;
+                            font-size: $font-size-base;
+                        }
+                    }
+                    .othertxt {
+                        height: 40px;
+                        line-height: 40px;
+                        padding: 0 5px;
+                        width: 100px;
+                        border: 1px solid #ccc;
+                        background-color: #f5f5f5;
+                        color: #333;
+                        outline: none;
+                        border-radius: 2px;
+                        font-size: 14px;
+                    }
+                    .delay-alter{
+                        width: 126px;
+                        height: 30px;
+                        margin-left: 20px;
+                        margin-top: 10px;
+                        img{
+                            height: 30px;
+                            width: 78px;
+                            vertical-align: top;
+                            margin-right: 8px;
+                            cursor: pointer;
+                        }
+                        span{
+                            height: 24px;
+                            line-height: 24px;
+                            margin-top: 5px;
+                            cursor: pointer;
+                            font-size: $font-size-small;
+                        }
+                    }
+                }
+                .client-agree{
+                    height: 35px;
+                    width: 280px;
+                    margin-top: 2px;
+                    line-height: 35px;
+                    vertical-align: middle;
+                    span{
+                        height: 20px;
+                        width: 66px;
+                        font-size: $font-size-small;
+                        input{
+                            vertical-align: middle;
+                        }
+                    }
+                    strong{
+                        color: $link-hover-color;
+                        font-weight: normal;
+                        font-size: $font-size-base
+                    }
+                }
+                .client-submit{
+                    border: none;
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-radius: 2px;
+                    color: #fff;
+                    outline: none;
+                    vertical-align: top;
+                    background-color: $link-hover-color;
+                }
+            }
+            .c-r-cooperate{
+                height: 48px;
+                width: 280px;
+                padding-top: 20px;
+                clear: both;
+                .cooperate-list{
+                    width: 280px;
+                    height: 24px;
+                    line-height: 24px;
+                    color: #999;
+                    font-size: $font-size-small;
+                    text-align: center;
+                }
+                .cooperate-list{
+                    height: 24px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

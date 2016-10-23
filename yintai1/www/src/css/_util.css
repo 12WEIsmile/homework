@@ -1,0 +1,47 @@
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+.w {
+  width: 1190px;
+  margin: 0 auto !important;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.affix {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/*head*/
+
+/*# sourceMappingURL=_util.css.map */
