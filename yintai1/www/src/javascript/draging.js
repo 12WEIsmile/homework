@@ -1,5 +1,4 @@
 
-
 window.onload = function(){
 				var d = new Drag("drawDiv");
 				d.init();

@@ -12,17 +12,33 @@ $(function(){
 					scrollTop: 0},1000);
 	})
 	$("#float_nav ul li").not(".last").click(function(){
+//		alert($("body").height());
 		$(this).html(keycode[$(this).index()]).siblings().html("");
 		$(this).addClass("scrollColor").siblings().removeClass("scrollColor");
-//		var $doc=$("body")||$(document.documentElement);
-//		$doc.animate({scrollTop:$(this).index()*454+1800},600);
+//		注意在chrome下兼容		
 		$("body").animate({scrollTop:$(this).index()*454+1800},600);
 //		$(document.documentElement).animate({scrollTop:$(this).index()*454+1800},600);
+//		注意在IE下兼容下面的形式
+		$("html").animate({scrollTop:$(this).index()*454+1800},600);
+		
 	})
-	$(document).scroll(function(){
-		var num=Math.floor((($("body").scrollTop()-1800)+$(window).height()/2) /454);
+	$(window).scroll(function(){
+//		console.log($("body").scrollTop());
+//		console.log($(window).height());
+		
+		var num;
+//		num=Math.floor((($("body").scrollTop()-1800)+$(window).height()/2) /454);
+//		num=Math.floor((($("html").scrollTop()-1800)+$(window).height()/2) /454);		
+		num=Math.floor((($(window).scrollTop()-1800)+$(window).height()/2) /454);		
+		if(num<0){
+			$("#float_nav ul li").not(".last").each(function(i){
+				$(this).html("");
+				$(this).removeClass("scrollColor");
+			})
+		}else{
 		$("#float_nav ul li").not(".last").eq(num).addClass("scrollColor").siblings().removeClass("scrollColor")
 		$("#float_nav ul li").not(".last").eq(num).html(keycode[num]).siblings().html("");
+		}
 	})
 	
 })

@@ -5,15 +5,17 @@
 		<title>用户登录</title>
 		<link rel="stylesheet" type="text/css" href="../css/main-index.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/main-login.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="../css/main-detail.css"/>
 		<script src="../javascript/lib/jquery-1.11.3.js"></script>
 		<script src="../javascript/headshow1.js"></script>
-		<script src="../javascript/lbtjQuery.js"></script>
 		<script src="../javascript/tab1.js"></script>
 		<script src="../javascript/switchable.js"></script>
 		<script src="../javascript/switchable2.js"></script>
 		<script src="../javascript/climbStairs.js"></script>
 		<script src="../javascript/login-tab.js"></script>
+		<script src="../javascript/logo-info.js"></script>
+		<script src="../javascript/lib/jquery.cookie.js"></script>
+		<script src="../javascript/register.js"></script>
 	</head>
 	<body>
 		<div id="hdtop">
@@ -36,9 +38,9 @@
 					</li>
 				</ul>
 				<ul class="top-logs r">
-					<li class="l"><a href="###" style="padding-right: 12px;">Hi,欢迎来到银泰网</a></li>
-					<li class="l"><a href="###" style="padding-right: 15px;">登录</a></li>
-					<li class="l"><a href="###" style="padding-right: 13px;">注册</a></li>
+					<li class="l "><a href="###" style="padding-right: 12px;" class="login-name">Hi,欢迎来到银泰网</a></li>
+					<li class="l"><a href="login.html" style="padding-right: 15px;" class="withdraw">登录</a></li>
+					<li class="l"><a href="register.html" style="padding-right: 13px;">注册</a></li>
 					<li class="l"><a href="###" style="padding: 0 12px; border-right: 1px solid #ccc;">我的订单</a></li>
 					<li class="l relative"><a href="###" style="padding-left: 12px; padding-right: 14px; border-right: 1px solid #ccc;">我的银泰<span><img src="../img/index/arrow1.png" style="padding-left: 5px;"></span></a>
 						<div class="absolute head-show hide">
@@ -934,32 +936,32 @@
 				<div class="c-login-count" >
 					<div class="c-login-num">
 						<div class="c-r-jump">
-							<span><a href="###">立即注册</a>银泰网</span>
+							<span><a href="register.html">立即注册</a>银泰网</span>
 						</div>
 						<div class="loginForm">
 							<div class="client-list">
-								<input class="nametxt stress l" id="LoginName" type="text" placeholder="已验证手机/邮箱">
+								<input class="nametxt l" id="LoginName" type="text" placeholder="已验证手机/邮箱">
 								
-								<div class="tips">
+								<div class="tips hide show-flagphone">
 									<p class="wrong">请输入正确的E-mail或已验证的手机号码！</p>
 								</div>
 							</div>
 							<div class="client-list">
-								<input class="nametxt stress l" id="LoginPassWord"  type="password" placeholder="密码"/>
-								<div class="tips">
-									<p class="wrong">6-16个字符，可使用字母、数字、符号任意组合！</p>
+								<input class="nametxt l" id="LoginPassWord"  type="password" placeholder="密码"/>
+								<div class="tips hide show-flagcode">
+									<p class="wrong">请输入正确的密码</p>
 								</div>
 							</div>
-							<div class="client-list">
+							<!--<div class="client-list">
 								<input  class="othertxt l stress" id="verifyCode" placeholder="验证码" />
 								<div class="r delay-alter">
 									<img src="../img/logo/art-font.jpg" class="l"/>
 									<span class="l">换一张</span>
 								</div>
-								<div class="tips l">
+								<div class="tips l hide">
 									<p class="wrong">请输入正确的验证码！</p>
 								</div>
-							</div>
+							</div>-->
 							<div class="client-agree">
 								<span class="l">
 									<input type="checkbox" class="agreement" id="agreement" />自动登录
@@ -967,7 +969,7 @@
 								<strong>公共场所不建议自动登录</strong>
 								<a href="###">忘记密码?</a>
 							</div>
-							<button class="client-submit">登录</button>
+							<button class="client-submit" id="submit">登录</button>
 						</div>
 						<div class="c-r-cooperate">
 							<div class="cooperate-list">您可以使用合作网站账号登陆</div>
@@ -981,12 +983,19 @@
 							<div class="qrcode-main"><img src="../img/logo/weixin.jpg"></div>
 							<div class="qrcode-desc"><a href="###">下载银泰网APP</a>丨<a href="###">使用帮助</a></div>
 							<div class="qrcode-tip">仅限4.1.1以上版本使用</div>
-						</div>
-						
+						</div>						
 					</div>
 				</div>
 			</div>
 		</div>
+		<!--登录成功-->
+		<div class="show-wicket affix hide" id="log-show" style="height: 125px;">
+			<a href="###" class="close-exit l absolute"></a>
+			<div class="box-content">
+				<p class="box-cart-info"style="height: 50px;text-align: center;line-height: 50px; color: #e5004f; ">恭喜你登录成功</p>
+				
+			</div>
+		</div>	
 		<!------------------l尾部 -------------->
 		<div id="ft">
 			<div class="itips">

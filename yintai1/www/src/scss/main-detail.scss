@@ -3,7 +3,6 @@
         "util",
         "variables";
 body{
-    height: 100%; 
     font-family: Microsoft YaHei;   
 } 
 .detail-returnTop{
@@ -127,7 +126,57 @@ body{
                 width: 328px;
                 height: 472px;
                 margin: 0 auto;
-                background: #f00;
+                .magnifier-wrap{
+                      z-index: 100;
+                      width: 300px;
+                      height: 400px;
+                      margin: 0 auto;
+                      .same-variety{
+                          height: 400px;
+                          width:300px;
+                      }
+                      .one-mag{                     
+                          background: url(../img/detail/pic1l.jpg) no-repeat center;
+                      }
+                      .two-mag{
+                          background: url(../img/detail/pic2l.jpg) no-repeat center;
+                      }
+                      .three-mag{
+                          background: url(../img/detail/pic3l.jpg) no-repeat center;
+                      }
+                      .four-mag{
+                          background: url(../img/detail/pic4l.jpg) no-repeat center;
+                      }
+                }
+                .ew-c-list{
+                  height:62px;
+                  margin: 0 auto;
+                  margin-top: 10px;
+                  padding: 0 20px;
+                  
+                  li{
+                        width: 62px;
+                        height: 62px;
+                        overflow: hidden;
+                        text-align: center;
+                        a{
+                            display: block;
+                            width: 60px;
+                            height: 60px;
+                            vertical-align: middle;
+                            text-align: center;
+                            border: 1px solid #999;
+                            img{
+                                display: block;
+                                width: 40px;
+                                vertical-align: bottom;
+                                margin: 0 auto;
+                                margin-top:4px;
+                            }
+                            
+                        }
+                  }
+                }
             }
             
             

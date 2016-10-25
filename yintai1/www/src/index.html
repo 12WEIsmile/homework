@@ -6,11 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="css/main-index.css"/>
 		<script src="javascript/lib/jquery-1.11.3.js"></script>
 		<script src="javascript/headshow1.js"></script>
-		<script src="javascript/lbtjQuery.js"></script>
+		<script src="javascript/Carousel-figure.js"></script>
 		<script src="javascript/tab1.js"></script>
 		<script src="javascript/switchable.js"></script>
 		<script src="javascript/switchable2.js"></script>
 		<script src="javascript/climbStairs.js"></script>
+		<script src="javascript/logo-info.js"></script>
+		<script src="javascript/lib/jquery.cookie.js"></script>		
 	</head>
 	<body>
 		<!----------头部----------------->
@@ -34,9 +36,9 @@
 					</li>
 				</ul>
 				<ul class="top-logs r">
-					<li class="l"><a href="###" style="padding-right: 12px;">Hi,欢迎来到银泰网</a></li>
-					<li class="l"><a href="###" style="padding-right: 15px;">登录</a></li>
-					<li class="l"><a href="###" style="padding-right: 13px;">注册</a></li>
+					<li class="l"><a href="###" style="padding-right: 12px;" class="login-name">Hi,欢迎来到银泰网</a></li>
+					<li class="l"><a href="html/login.html" style="padding-right: 15px;" class="withdraw">登录</a></li>
+					<li class="l"><a href="html/register.html" style="padding-right: 13px;">注册</a></li>
 					<li class="l"><a href="###" style="padding: 0 12px; border-right: 1px solid #ccc;">我的订单</a></li>
 					<li class="l relative"><a href="###" style="padding-left: 12px; padding-right: 14px; border-right: 1px solid #ccc;">我的银泰<span><img src="img/index/arrow1.png" style="padding-left: 5px;"></span></a>
 						<div class="absolute head-show hide">
@@ -76,7 +78,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="hdmenu">
+				<div id="hdmenu">
 			<div class="top-menu w">
 				<div class="menu-cate relative l"><a href="###" class="menu-cate-title">全部分类</a>
 					<div class="menu-allout absolute">
@@ -89,7 +91,7 @@
 								<a href="###" class="l hot">秋冬新品</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-46px;">
+							<dd class="relative l hide" style="left:210px; top:-46px;">
 								<div class="l submenu">									
 									<div class="sorts-list l">						
 										<div class="sorts-repeat">
@@ -181,7 +183,7 @@
 								<a href="###" class="l hot">秋冬上新</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-92px;">
+							<dd class="relative l hide" style="left:210px; top:-92px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -259,7 +261,7 @@
 								<a href="###" class="l hot">型男专场</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-138px;">
+							<dd class="relative l hide" style="left:210px; top:-138px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -342,7 +344,7 @@
 								<a href="###" class="l hot">时尚鞋品</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-184px;">
+							<dd class="relative l hide" style="left:210px; top:-184px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -425,7 +427,7 @@
 								<a href="###" class="l hot">护肤套装</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-230px;">
+							<dd class="relative l hide" style="left:210px; top:-230px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -508,7 +510,7 @@
 								<a href="###" class="l hot">女神单肩</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-276px;">
+							<dd class="relative l hide" style="left:210px; top:-276px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -591,7 +593,7 @@
 								<a href="###" class="l hot">运动鞋服</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-322px;">
+							<dd class="relative l hide" style="left:210px; top:-322px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -674,7 +676,7 @@
 								<a href="###" class="l hot">黄金饰品</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-368px;">
+							<dd class="relative l hide" style="left:210px; top:-368px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -757,7 +759,7 @@
 								<a href="###" class="l hot">母婴</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-414px;">
+							<dd class="relative l hide" style="left:210px; top:-414px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -840,7 +842,7 @@
 								<a href="###" class="l hot">舒适内衣</a>
 								<span class="r"></span>
 							</dt>
-							<dd class="relative hide" style="left:210px; top:-460px;">
+							<dd class="relative l hide" style="left:210px; top:-460px;">
 								<div class="l submenu">
 									<div class="sorts-list l">
 										<div class="sorts-repeat">
@@ -918,6 +920,7 @@
 			</div>
 		</div>
 
+		
 		<div id="tab-nav" class="absolute">
 			<div class="banner-img relative">
 				<div class="left absolute"></div>
@@ -1402,7 +1405,7 @@
 				<a href="###" class="l"><img src="img/index/img-wap83.jpg"></a>
 				<a href="###" class="l"><img src="img/index/img-wap84.jpg"></a>
 			</div>
-			
+		<!--楼梯部分-->	
 		</div>
 		<div id="float_nav" class="affix hide">
 			<ul>

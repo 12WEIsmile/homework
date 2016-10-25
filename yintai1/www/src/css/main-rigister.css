@@ -1,0 +1,126 @@
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+/*reset*/
+body, h1, h2, h3, h4, h5, h6, p, ul, li, dl, ol, dd, dt, a, img, input, span {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e5004f;
+  text-decoration: none;
+}
+
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+.w {
+  width: 1190px;
+  margin: 0 auto !important;
+}
+
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.affix {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/*head*/
+/*reset*/
+/*a*/
+/*border*/
+/*h*/
+/*padding*/
+/*head*/
+body {
+  font-family: Microsoft YaHei;
+}
+
+.c-register-head {
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #cdcdcd;
+  background: #e5004f;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.common-register {
+  height: 409px;
+  width: 280px;
+  padding: 0 20px;
+}
+.common-register .c-r-jumprg {
+  height: 50px;
+  width: 280px;
+  line-height: 50px;
+  text-align: right;
+  font-size: 12px;
+}
+.common-register .c-r-jumprg a {
+  color: #e5004f;
+}
+
+/*# sourceMappingURL=main-rigister.css.map */

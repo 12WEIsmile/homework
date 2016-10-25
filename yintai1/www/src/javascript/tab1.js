@@ -1,25 +1,27 @@
 $(function(){
-	$(".menu-cate").mouseover(function(){
+	$(".menu-cate").hover(function(){
 		$(this).find(".menu-allout").addClass("show");
-	})
-	$(".menu-cate").mouseout(function(){
+	},
+	function(){
 		$(this).find(".menu-allout").removeClass("show");
 	})
-	$(".menu-allout dl dt").mouseover(function(){
-		$(this).siblings().show();
-//		$(this).css({
-//			"background":"#e5004f"
-//		})
+
+//	$(".menu-allout dl").hover(function(){
+//		$(this).find("dd").show();
+//	},
+//		function(){
+//		$(this).find("dd").hide();
+//	})
+	
+	$(".menu-allout dl").mouseenter(function(){
+		$(this).find("dd").show();
 	})
-	$(".menu-allout dl dd").mouseover(function(){
-		$(this).show();
+	$(".menu-allout dl").mouseleave(function(){
+		$(this).find("dd").hide();
 	})
-	$(".menu-allout dl dd").mouseout(function(){
-		$(this).hide();
-	})
-	$(".menu-allout dl dt").mouseout(function(){
-		$(this).siblings().hide();
-	})
+	
+	
+	
 	
 	
 	$(".f-pic").mouseover(function(){

@@ -7,7 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="../css/main-detail.css"/>
 		<script src="../javascript/lib/jquery-1.11.3.js"></script>
 		<script src="../javascript/headshow1.js"></script>
-		<script src="../javascript/lbtjQuery.js"></script>
 		<script src="../javascript/tab1.js"></script>
 		<script src="../javascript/switchable.js"></script>
 		<script src="../javascript/switchable2.js"></script>
@@ -15,6 +14,11 @@
 		<script src="../javascript/abutton-tab.js"></script>
 		<script src="../javascript/detail-numadd.js"></script>
 		<script src="../javascript/draging.js"></script>
+		<script src="../javascript/logo-info.js"></script>
+		<script	src="../javascript/lib/jquery.cookie.js"></script>
+		<script src="../javascript/cookie-register.js"></script>
+		<script src="../javascript/magnifier.js"></script>
+		<script src="../javascript/detail-zoom.js"></script>
 	</head>
 	<body>
 		<div id="hdtop">
@@ -38,8 +42,8 @@
 				</ul>
 				<ul class="top-logs r">
 					<li class="l"><a href="###" style="padding-right: 12px;">Hi,欢迎来到银泰网</a></li>
-					<li class="l"><a href="###" style="padding-right: 15px;">登录</a></li>
-					<li class="l"><a href="###" style="padding-right: 13px;">注册</a></li>
+					<li class="l"><a href="login.html" style="padding-right: 15px;" class="login-name">登录</a></li>
+					<li class="l"><a href="register.html" style="padding-right: 13px;" class="withdraw">注册</a></li>
 					<li class="l"><a href="###" style="padding: 0 12px; border-right: 1px solid #ccc;">我的订单</a></li>
 					<li class="l relative"><a href="###" style="padding-left: 12px; padding-right: 14px; border-right: 1px solid #ccc;">我的银泰<span><img src="../img/index/arrow1.png" style="padding-left: 5px;"></span></a>
 						<div class="absolute head-show hide">
@@ -946,20 +950,32 @@
 			</div>
 			<!----------放大镜部分------------>
 			<div id="proGoods">
-				<div class="y-pro-place l">
-					
+				<div class="y-pro-place l">					
 					<div class="Y_picBox l">
 						<div class="y-pro-tab">
-							
+							<div class="magnifier-wrap">
+								<div class="one-mag l same-variety"></div>
+								<div class="two-mag l same-variety hide"></div>
+								<div class="three-mag l same-variety hide"></div>
+								<div class="four-mag l same-variety hide"></div>
+							</div>
+							<ul class="ew-c-list">
+								<li class="l">
+									<a href="###" ><img src="../img/detail/pic1s.jpg"></a>
+								</li>
+								<li class="l">
+									<a href="###" ><img src="../img/detail/pic2s.jpg"></a>									
+								</li>
+								<li class="l">
+									<a href="###" ><img src="../img/detail/pic3s.jpg"></a>
+								</li>
+								<li class="l">
+									<a href="###" ><img src="../img/detail/pic4s.jpg"></a>
+								</li>
+							</ul>
 						</div>
-					</div>
-					
-					
-					
-					
-					
-					
-					
+						
+					</div>						
 					<div class="p-info r">
 						<h3 class="p-tit">MICHAEL KORS/迈克高仕 MK 女士 经典时尚手提单肩包</h3>
 						<div class="priceInfo">

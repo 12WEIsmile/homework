@@ -1,0 +1,32 @@
+@import "mixins",
+        "type",
+        "util",
+        "variables";
+body{ 
+    font-family: Microsoft YaHei; 
+    
+} 
+.c-register-head{
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #cdcdcd;
+    background: $link-hover-color;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.common-register{
+    height: 409px;
+    width:280px;
+    padding: 0 20px;
+    .c-r-jumprg{
+        height: 50px;
+        width: 280px;
+        line-height: 50px;
+        text-align: right;
+        font-size: $font-size-small;
+        a{
+            color: $link-hover-color;
+        }
+    }
+}

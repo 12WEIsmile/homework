@@ -2,7 +2,9 @@
         "type",
         "util",
         "variables";
-
+body{
+    height: 100%;
+}
 #hdtop{
     height: $head-height;
     background: $body-bg;
@@ -227,14 +229,14 @@
                 background: #000;
                 dl{
                     height: 46px;
-                    width:210px;
+//                  width:210px;               
                     dt{
                         height: 30px;
                         padding-top: 15px;
-                        width: 210px;
-                        border-bottom: 1px solid #515151;
+                        width: 210px;                        
                         background: #333;
                         visibility: visible;
+                         border-bottom: 1px solid #515151;
                        .category{
                            display: inline-block;
                            margin-left: 18px;
@@ -272,13 +274,12 @@
                             margin: 0 8px;                             
                       }
                     }
-                  dd{                    
+                  dd{              
                         .submenu{
                             height: 420px;
                             width: 495px; 
                             color: #666;                  
-                            background: #f00;
-                            background: url(../img/index/category-listings3.png) repeat-y 0 0;
+                            background:#000 url(../img/index/category-listings3.png) repeat-y 0 0;
                             opacity: 0.97;
                             filter:alpha(opacity=97);
                             padding-left: 30px;

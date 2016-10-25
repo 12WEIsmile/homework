@@ -2,3 +2,287 @@
         "type",
         "util",
         "variables";
+#p-crumbs-rEP{
+    height: 51px;
+    width:1190px;
+    background: #f4f4f4;
+    margin: 0 auto;
+    .t-crumbs{
+        border-collapse: collapse;
+        border-spacing: 0;
+        width:1190px;
+        height: 51px;
+        font-size: $font-size-small;
+        .first{
+            padding: 5px 15px;
+            width: 40px;
+            height:41px;
+            line-height: 41px;
+            text-align: center;
+            .J_xuanqu{
+                padding:8px;
+                white-space: nowrap;
+                color: #666;
+            }
+        }
+        .next-kinds{
+            width:1010px;
+            padding-bottom: 0 15px;
+            height: 51px;
+            line-height: 51px;
+            background: url(../img/list/shu-line.jpg) no-repeat left 18px;
+            .xuan-cf{
+                white-space: nowrap;
+                padding: 8px;
+                height: 35px;
+                width:978px;
+                .cf{
+                    padding: 5px 0 0 0;
+                    height:35px;
+                    width:170px;
+                    line-height: 20px;
+                    color: #666;                       
+                   span{                          
+                       strong{
+                           font-weight: bold;
+                           color: $link-hover-color;                              
+                       }
+                   }
+                }
+            }
+        }
+    }
+}
+#p-filter{
+    padding-top: 5px;
+    overflow: hidden;
+    border-bottom: 3px solid #000;
+    .p-filterCommon{
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .p-filterkinds{
+        overflow: hidden;
+        padding: 6px 30px;
+        width:1110px;
+        dl{
+            overflow: hidden;
+            line-height: 30px;
+            font-size: $font-size-base;
+            dd{
+                margin-left: 30px;
+                width: 960px;
+                ul{
+                    list-style: none;
+                    li{
+                        margin-right: 17px;
+                        padding-bottom: 10px;
+                        width:175px;                                    
+                    }
+                }
+            }
+        }        
+    }
+    .p-filterKindsMain{
+        padding: 6px 30px;
+        width:1110px;
+        overflow: hidden;
+        dl{
+            overflow: hidden;
+            line-height: 30px;
+            font-size: $font-size-base;
+            dd{
+                margin-left: 40px;
+                width: 960px;
+                height: 28px;
+                overflow: hidden;         
+                ul{
+                    list-style: none;
+                    li{
+                        margin-right: 17px;
+                        padding-bottom: 10px;
+                        width:46px;                                    
+                    }
+                }
+            }
+            .show-dd{
+               overflow-y:scroll;
+               height:84px;  
+            }
+        }
+        .p-filterOperate{          
+            overflow: hidden;
+            margin-left: 15px;
+            a{
+                display: block;
+                height: 20px;
+                width:45px;
+                background:url(../img/list/p-allIcon.gif) no-repeat 32px -179px;
+            }
+            .position-bg1{
+                background-position: 32px -215px;
+            }
+        }        
+    }
+    
+}
+#fixnav-wrap{
+    height: 35px;
+    margin-top: 55px;
+    background: #5c5c5c;
+//  top:0px;
+//  left:120px;
+    .p-listNav{
+        height: 35px;
+        
+        line-height: 35px;
+        .p-listNavDefaultD{
+            height: 35px;
+            line-height: 35px;
+            border-right: 1px solid #ccc;
+            a{
+                padding: 0 20px;
+                white-space: nowrap;
+                color: #fff; 
+                font-size: $font-size-base;
+               span{
+                   display: inline-block;
+                   vertical-align: middle;
+                   height: 13px;
+                   width: 13px;
+                   background: url(../img/list/pro-list-change.jpg) no-repeat;
+                   margin-right: 5px;                   
+               }
+               .J-price{
+                   background-position: right 0;
+               }             
+            }
+            .bg-showIMg{
+                
+            }
+           
+            .position-img{
+                background: url(../img/list/px.png) no-repeat 50px 8px;
+                
+            }
+            .position-img:hover{
+                color: #fff;
+            }
+            a:hover{
+                color: $link-hover-color;
+            }
+        }
+        .bg-showIMg{
+            background: url(../img/list/miao.jpg) no-repeat 64px 5px;
+        }
+        .p-listNavSearch{
+            width: 203px;
+            height: 23px;
+            padding: 6px;
+            .p-listNavSearchInput{
+                width: 160px;
+                height: 23px;
+                margin: 0;
+                line-height: 23px;
+                border: none;
+                display: block;
+                overflow: hidden;
+                padding-left: 5px;
+                color: #777777;
+                font-size: 12px;
+            }
+            .p-listNavSearchBtn{
+                width: 38px;
+                height: 23px;
+                border: 0;
+                cursor: pointer;
+                background: url(../img/list/qr.jpg) no-repeat left top;
+            }
+        }
+    }
+}
+#p-listMain{
+    height: 5520px;
+    .p-listInfo{
+            width: 228px;
+            border: 2px solid #f4f4f4;
+            float: left;
+            display: inline;
+            margin: 3px;
+            background: #fff;
+            height: 450px;
+            .p-listImgBig{
+                overflow: hidden;
+                margin-bottom: 10px;
+                a{
+                   display: block;
+                    height: 304px;
+                    width:228px;
+                    img{
+                       display: block;
+                        height: 304px;
+                        width:228px; 
+                    }
+                    .show-bigImg{
+                        height:320px;
+                    }                   
+                }
+            }
+            .p-listScroller{
+                width: 208px;
+                height: 57px;
+                margin-left: 10px;
+                overflow: hidden;
+                .listPicPanel{
+                    overflow: visible;
+                    margin: 0 auto;
+                    li{
+                        margin: 0 4px;
+                        a{
+                            display: block;
+                            border: 1px solid #e2e2e2;
+                            width: 40px;
+                            height: 53px;
+                            padding: 1px;
+                            overflow: hidden;
+                            img{
+                                display: block;
+                                width: 40px;
+                                height: 53px;
+                            }
+                        }
+                    }
+                }
+            }
+            .p-listPrice{
+                padding: 0 12px;
+                padding-bottom: 5px;
+                strong{
+                    color: $link-hover-color;
+                    padding-right: 20px;
+                    font-size: $font-size-small;
+                }
+                em{  
+                    font-style: normal;
+                    color: #999;
+                    background: url(../img/list/sprit.gif) no-repeat -446px -479px;
+                    font-size: $font-size-small;
+                }
+            }
+            .p-listTxt{
+                height: 42px;
+                width: 204px;
+                margin-bottom: 5px;
+                padding: 0 12px;
+                p{
+                    line-height:21px;
+                    font-style: normal;
+                    a:hover{
+                        color: $link-hover-color;
+                    }
+                }
+            }
+    }
+    .stress-bc{
+        border: 2px solid $link-hover-color;
+    }
+}
