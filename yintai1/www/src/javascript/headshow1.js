@@ -1,3 +1,4 @@
+//关于头部的下拉菜单
 $(function(){
 	$("li").mouseover(function(){
 		$(this).find(".head-show").show();

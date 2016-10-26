@@ -1,4 +1,4 @@
-
+//关于详情页的出现弹窗的拖拽效果
 window.onload = function(){
 				var d = new Drag("drawDiv");
 				d.init();

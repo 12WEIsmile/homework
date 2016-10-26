@@ -131,22 +131,50 @@ body{
                       width: 300px;
                       height: 400px;
                       margin: 0 auto;
-                      .same-variety{
+                      .small-img{
                           height: 400px;
                           width:300px;
+                          display: block;
                       }
-                      .one-mag{                     
-                          background: url(../img/detail/pic1l.jpg) no-repeat center;
+                      .glass{
+                          border:1px solid #D4BD8A;
+                          width:80px;
+                          height: 80px;
+                          opacity: .4;
+                          filter: alpha(opacity=40);
+                          z-index: 2;
+                          background: #b9cdd7;
+                          top:0;
+                          left:0;
                       }
-                      .two-mag{
-                          background: url(../img/detail/pic2l.jpg) no-repeat center;
+                      .bigImg{
+                          width: 350px;
+                          height: 350px;
+                          overflow: hidden;
+                          top:10px;
+                          left:312px;
+                          border: 1px solid #999999;
+                        
                       }
-                      .three-mag{
-                          background: url(../img/detail/pic3l.jpg) no-repeat center;
-                      }
-                      .four-mag{
-                          background: url(../img/detail/pic4l.jpg) no-repeat center;
-                      }
+                      
+                      
+//                    .same-variety{
+//                        height: 400px;
+//                        width:300px;
+//                    }
+//                    .one-mag{                     
+//                        background: url(../img/detail/pic1l.jpg) no-repeat center;
+//                    }
+//                    .two-mag{
+//                        background: url(../img/detail/pic2l.jpg) no-repeat center;
+//                    }
+//                    .three-mag{
+//                        background: url(../img/detail/pic3l.jpg) no-repeat center;
+//                    }
+//                    .four-mag{
+//                        background: url(../img/detail/pic4l.jpg) no-repeat center;
+//                    }
+                    
                 }
                 .ew-c-list{
                   height:62px;
@@ -159,13 +187,14 @@ body{
                         height: 62px;
                         overflow: hidden;
                         text-align: center;
+                        margin-right: 5px;
                         a{
                             display: block;
                             width: 60px;
                             height: 60px;
                             vertical-align: middle;
                             text-align: center;
-                            border: 1px solid #999;
+                            border: 1px dashed #999;
                             img{
                                 display: block;
                                 width: 40px;

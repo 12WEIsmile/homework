@@ -1,3 +1,4 @@
+//关于首页的tab切换加自动切换对应得内容
 $(function(){
 	var timer=0;
 	var index=0;

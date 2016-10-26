@@ -228,15 +228,20 @@ body{
                 border-top: 1px solid #222;
                 background: #000;
                 dl{
-                    height: 46px;
-//                  width:210px;               
+                    height: 47px;
+//                  width:210px;   
+                    &:hover{
+                        dd{
+                            display: block;
+                        }
+                    }            
                     dt{
                         height: 30px;
                         padding-top: 15px;
                         width: 210px;                        
                         background: #333;
                         visibility: visible;
-                         border-bottom: 1px solid #515151;
+                        border-bottom: 1px solid #515151;
                        .category{
                            display: inline-block;
                            margin-left: 18px;

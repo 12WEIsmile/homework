@@ -2,8 +2,170 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/main-index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/main-detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/main-cart.css"/>
+		<script src="../javascript/lib/jquery-1.11.3.js"></script>
+		<script src="../javascript/headshow1.js"></script>
+		<script src="../javascript/tab1.js"></script>
+		<script src="../javascript/switchable.js"></script>
+		<script src="../javascript/switchable2.js"></script>
+		<script src="../javascript/climbStairs.js"></script>
+		<script src="../javascript/abutton-tab.js"></script>
+		<script src="../javascript/detail-numadd.js"></script>
+		<script src="../javascript/logo-info.js"></script>
+		<script	src="../javascript/lib/jquery.cookie.js"></script>
+		<script src="../javascript/cookie-register.js"></script>
+		<script src="../javascript/magnifier.js"></script>
+		<script src="../javascript/detail-zoom.js"></script>		
+		<script src="../javascript/purchase.js"></script>
+		<script src="../javascript/cart-button.js"></script>
 	</head>
 	<body>
+		<div id="hdtop">
+			<div class="top-side w">
+				<ul class="top-entry l">
+					<li class="l collect"><a href="../index.html">银泰首页</a>						
+					</li>
+					<li class="l weichat relative"><a href="###">微信<span><img src="../img/index/arrow1.png"></span></a>						
+					<div class="absolute head-show hide">
+						<a href="###">微信</a><span><img src="../img/index/arrow2.png"></span>
+						<img src="../img/index/weixinpig.png" style="padding-left: 13px; padding-top: 5px;">
+					</div>
+					</li>
+					<li class="l yt-phone  relative"><a href="###">手机银泰<span><img src="../img/index/arrow1.png"></span></a>
+					<div class="absolute head-show hide">
+						<a href="###">手机银泰</a><span><img src="../img/index/arrow2.png"></span>
+						<p>扫一扫下载银泰客户端</p>
+						<img src="../img/index/weixinpic2.png" style="padding-left: 24px; padding-top: 5px;"/>			
+					</div>
+					</li>
+				</ul>
+				<ul class="top-logs r">
+					<li class="l"><a href="###" style="padding-right: 12px;" class="login-name">Hi,欢迎来到银泰网</a></li>
+					<li class="l"><a href="login.html" style="padding-right: 15px;" class="withdraw">登录</a></li>
+					<li class="l"><a href="register.html" style="padding-right: 13px;">注册</a></li>
+					<li class="l"><a href="###" style="padding: 0 12px; border-right: 1px solid #ccc;">我的订单</a></li>
+					<li class="l relative"><a href="###" style="padding-left: 12px; padding-right: 14px; border-right: 1px solid #ccc;">我的银泰<span><img src="../img/index/arrow1.png" style="padding-left: 5px;"></span></a>
+						<div class="absolute head-show hide">
+							<div class="all" style="height: 35px;"><a href="###">我的银泰<a><span style="display: inline-block;"><img src="../img/index/arrow2.png"></span></div>							
+								<div class="item"><a href="###">我的收藏</a></div>
+								<div class="items"><a href="###">我的余额</a></div>
+								<div class="items"><a href="###">我的银元</a></div>
+								<div class="items"><a href="###">我的银泰卡</a></div>
+								<div class="items"><a href="###">我的优惠券</a></div>
+								<div class="items" style="border: 0;"><a href="###">我的积分</a></div>
+							
+						</div>
+					</li>
+					<li class="l"><a href="###" style="padding-left: 12px; padding-right: 13px; border-right: 1px solid #ccc;">银泰卡</a></li>
+					<li class="l"><a href="###" style="padding-left: 12px;">帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="hd-main">
+			<div class="top-main w">
+				<h1 class="ilogo l"><a href="http://www.yintai.com"></a></h1>	
+			</div>
+		</div>
+		<!----------------------以上样式相同----------------------------->
+		<div id="cartinf">		
+			<div class="bdwraper">
+				<div class="CartSteps">
+					<h2 class="l"></h2>
+					<div class="sp-step r">
+						<span class="clickone l">
+							查看购物袋
+							<em>STEP 1</em>
+						</span>
+						<span class="clicktwo l">
+							填写订单信息
+							<em>STEP 2</em>
+						</span>
+					</div>					
+				</div>
+				<div id="CommodityBox">
+					<div class="CommodityCate">
+						<span class="th-chk l">
+							<span>
+								<!--全选框-->
+								<input type="checkbox" id="J-UPCheck" class="l" />
+								<label for="J-UPCheck" class="J-UOCheck l">	
+								</label>
+							</span>
+							&nbsp;全选
+						</span>
+						<span class="th-item l">商品</span>
+						<span class="th-price l">单价</span>
+						<span class="th-amount l">数量</span>
+						<span class="th-sum l">获得积分</span>
+						<span class="th-op l">操作</span>
+					</div>
+					<div class="CommodityBox">
+						<div class="CommodityTitle">
+							<div class="ActivitieHead">
+								<h3>普通商品</h3>
+							</div>							
+						</div>
+						<!--<div class="CommodityList">
+								<div class="category th-chk l">
+									<div style="margin-top: 14.5px;">
+										
+										<input type="checkbox" class="J-willing l"  id="J-change"/>
+										<label class="J-SelectPro" for="J-change"></label>
+									</div>
+								</div>
+								<div class="th-item l">
+									<div class="property">
+										
+										<div class="pro-img l">
+											<img src="../img/list/d1.jpg" style=" display:block;width: 45px; height: 60px;">
+										</div>
+										<p class="pro-title l">
+											<a href="###">MICHAEL KORS/迈克高仕 MK 女士 经典时尚手提单肩包</a>
+										</p>
+										<p class="pro-check">
+											<span>颜色:<b>黑色</b></span>
+											<span>尺寸:<b>190*140*90mm</b></span>									
+										</p>
+									</div>
+								</div>
+								<div class="th-price l">
+									<div class="pro-price">
+										<strong>￥<em>16824</em></strong>
+										<span class="pro-rebate"><b>7.6</b>折</span>
+									</div>
+								</div>
+								<div class="th-amount l">
+									<div class="pro-number">
+										<a href="###" class="nums-red">-</a>
+										<input type="text" class="pro-nums" value="1" />
+										<a href="###" class="nums-add">+</a>
+										
+									</div>
+								</div>
+								<div class="th-sum l" style="margin-top: 11px;">16824</div>
+								<div class="th-op l" style="margin-top: 3px;">
+									<div class="relative decidetime">
+										<a href="###" class="pro-collect">移入收藏</a>
+									</div>
+									<div class="relative decidetime">
+										<a href="###" class="pro-remove">删除商品</a>
+									</div>
+								</div>
+						</div>-->
+						
+						<div class="PayofFouCont">
+							<div class="Accountsbox r position-add"></div>
+							<div class="AccountsNum r">结算金额：
+								<i class="cue">(已免运费)</i>
+								<strong class="pay">¥18234</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

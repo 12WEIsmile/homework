@@ -1,0 +1,369 @@
+@import "mixins",
+        "type",
+        "util",
+        "variables";
+#cartinf{
+    width: 100%;
+    background: #eee;
+    padding-top:20px ;
+}
+.bdwraper{
+    height: 784px;
+    margin: 0 auto;
+    width: 940px;
+    padding: 20px;
+      background: #fff;
+    .CartSteps{
+        height: 80px;
+        margin-bottom: 10px;
+      
+        h2{
+            width: 112px;
+            height: 80px;
+            background: url(../img/car/shopping-head.jpg) no-repeat 0 0;
+        }
+        .sp-step {
+            padding-top: 3px;
+            margin-right: 10px;
+            background: url(../img/car/shopping-head.jpg) no-repeat -158px 5px;
+            height: 57px;
+            width: 538px;
+            span{
+                em{
+                    font-style: normal;
+                    font-weight: 400px;
+                    padding-top: 18px;
+                    font-size: 12px;
+                    display: block;
+                }
+            }
+            .clickone{
+                vertical-align: top;
+                text-align: center;
+                font-size: $font-size-base;
+                color: $link-hover-color;
+                height: 57px;
+                width: 76px;
+                background: url(../img/car/shopping-head.jpg) no-repeat -158px -52px;               
+            }
+            .clicktwo{
+                vertical-align: top;
+                text-align: center;
+                color: #999;
+                width: 402px;
+                font-size: $font-size-base;
+            }
+        }
+    }
+}
+#CommodityBox{
+    height: 313px;
+    width: 940px;
+    .CommodityCate{
+        height: 30px;
+        width: 100%;
+        background: #666;
+        span{
+            line-height: 30px;
+            text-align: left;
+            font-weight: 700;
+            overflow: hidden;
+            color: #fff;
+            font-size: $font-size-small;
+        }
+        .th-chk{
+            width: 103px;
+            padding-left: 27px;
+            span{
+                position: relative;
+                display: inline-block;
+                zoom: 1;
+                width: 14px;
+                height: 13px;
+                margin-top: 10px;
+                overflow: hidden;
+                vertical-align: top;
+                
+            }
+            label{
+                   position: relative;
+                   z-index: 1;
+                   width: 14px;
+                   height: 13px;
+                   overflow: hidden;
+                   cursor: pointer;
+                   background: url(../img/car/shopping-icon.png) no-repeat 0 -55px;
+            }
+        }
+        .th-item{
+            width: 372px;
+        }
+        .th-price{
+            width: 130px;
+        }
+        .th-amount{
+                width: 66px;
+                padding-right: 60px;
+                text-align: center;
+        }
+        .th-sum{
+            width: 90px;
+            
+        }
+        .th-op{
+            width: 92px;
+        }
+        
+    }
+}
+.CommodityBox{
+    width: 940px;
+    margin-bottom: 10px;
+    .CommodityTitle{
+        clear: both;
+        position: relative;
+        height: 30px;
+        border: 1px solid #e2e2e2;
+        border-bottom: none;
+        background-color: #eee;
+        .ActivitieHead{
+                position: absolute;
+                top: -1px;
+                left: -10px;
+                height: 40px;
+                overflow: hidden;
+                padding-left: 10px;
+                h3{
+                        line-height: 30px;
+                        color: #666;
+                        padding: 0 32px 0 10px;
+                        font-size: 12px;
+                }
+        }
+       
+    }
+    .CommodityList{
+            clear: both;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            background: #f9f9f9;
+            zoom: 1;
+            width: 938px;
+            padding-top: 15px;            
+            border: 1px solid #e2e2e2;
+            border-top: none;
+            .th-chk{
+                    width: 40px;
+                    height: 62px;
+                    padding-left: 26px;
+                    div{
+                            position: relative;
+                            display: inline-block;
+                            width: 14px;
+                            height: 13px;
+                            overflow: hidden;
+                            vertical-align: top;
+                            label{
+                                    position: relative;
+                                    z-index: 1;
+                                    float: left;
+                                    width: 14px;
+                                    height: 13px;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                    background: url(../img/car/shopping-icon.png) no-repeat 0 -55px;
+                            }
+                    }
+                    
+            }
+            .th-item{
+                width:435px;
+                .property{
+                    width: 425px;
+                    overflow: hidden;                    
+                    margin-bottom: 10px;
+                   .pro-img{
+                        width: 45px;
+                        height: 60px;
+                        margin-right: 10px;
+                        overflow: hidden;
+                        border: 1px solid #efefef;
+                        background-color: #fff;
+                        img{
+                            display: block;
+                            width: 45px;
+                            height: 60px;
+                            vertical-align: top;
+
+                        }
+                   }
+                   .pro-title{
+                       float: left;
+                        width: 328px;
+                        position: relative;
+                        a{
+                            color: #666;
+                        }
+                   }
+                   .pro-check{
+                       height: 22px;
+                        line-height: 22px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 328px;
+                        span{
+                            margin-right: 10px;
+                            color: #999;
+                            b{
+                                font-weight: 400;
+                            }
+                        }
+                   }
+                }
+            }
+            .th-price{
+                width: 130px;
+                .pro-price{
+                    margin-top: 11px;
+                    line-height: 20px;
+                    strong{
+                        display: inline-block;
+                        height: 16px;
+                        line-height: 16px;
+                        vertical-align: middle;
+                        color: #e5004f;
+                        padding-right: 8px;
+                        em{
+                            font-weight: 700px;
+                        }
+
+                    }
+                   .pro-rebate{
+                           display: inline-block;
+                            width: 49px;
+                            height: 16px;
+                            line-height: 16px;
+                            padding-right: 6px;
+                            vertical-align: middle;
+                            text-align: center;
+                            overflow: hidden;
+                            color: #fff;
+                            font-family: Verdana;
+                            background: url(../img/car/shopping-icon.png) no-repeat 0 -177px;
+                   }
+                }
+                
+            }
+            .th-amount{
+                width: 66px;
+                height: 20px;
+                padding-right: 60px;
+                text-align: center;
+                margin-top: 12px;
+                .pro-number{
+                    position: relative;
+                    width: 64px;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: #666;
+                    a{
+                        position: absolute;
+                        width: 16px;
+                        height: 18px;
+                        line-height: 18px;
+                        overflow: hidden;
+                        border: 1px solid #dfdfdf;
+                        background-color: #eee;
+                        color: #666;
+                    }
+                    .nums-red{
+                            left: 0;
+                            top: 0;
+                            z-index: 2;  
+                    }
+                    input{
+                        position: absolute;
+                        left: 17px;
+                        top: 0;
+                        z-index: 1;
+                        width: 28px;
+                        height: 18px;
+                        line-height: 18px;
+                        overflow: hidden;
+                        text-align: center;
+                        border: 1px solid #ccc;
+                        background-color: #fff;
+                        color: #666;
+                        outline: none;
+                    }
+                    .nums-add{
+                        right: 0;
+                        top: 0;
+                        z-index: 2;
+                    }
+                }
+            }
+            .th-sum{
+                    width: 90px;
+                    line-height: 20px;
+            }
+            .th-op{
+                    width: 91px;
+                   .decidetime{
+                         a{
+                               display: block;
+                                width: 52px;
+                                height: 18px;
+                                padding-left: 16px;
+                                color: #666;
+                                background: url(../img/car/shopping-icon.png) no-repeat 0 -92px;
+                        }
+                        .pro-remove{
+                            background-position: 1px -125px;
+                        }
+                   }
+            }
+    }
+}
+.PayofFouCont{
+    width: 886px;
+    height: 42px;
+    padding: 8px 26px 15px;
+    z-index: 99;
+    background-color: #eee;    
+    .Accountsbox{
+        width: 147px;
+        height: 43px;
+        margin-left: 15px;
+        overflow: hidden;
+        cursor: pointer;
+        background: url(../img/car/shopping-submit.png) 0 0 no-repeat;
+    }
+    .position-add{
+        background-position: 0 bottom;
+    }
+    .AccountsNum{
+            height: 42px;
+            line-height: 42px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #333;
+            .cue{
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-left: -5px;
+                    font-style: normal;
+                    color: #666;
+            }
+            .pay{
+                    padding: 0 5px;
+                    font-size: 16px;
+                    font-family: Verdana;
+                    color: #e5004f;
+                    vertical-align: middle;
+
+            }
+    }
+}

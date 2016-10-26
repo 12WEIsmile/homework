@@ -5,8 +5,7 @@ $(function() {
 		$(".withdraw").html(" ");
 		
 	}
-	
-	
+		
 	
 //	$(".withdraw").click(function(){
 //			$(".login-name").html("Hi,欢迎来到银泰网");
@@ -33,6 +32,8 @@ $(function() {
 			});
 		}
 	})
+	
+	
 	function checkUserLogin(username, userpass) {
 		var flag = false;
 		$.each(JSON.parse($.cookie("msg")), function(i, n) {

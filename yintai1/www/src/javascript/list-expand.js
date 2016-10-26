@@ -1,3 +1,4 @@
+//关于列表页的下拉菜单
 $(function(){
 	$(".expandBtn").click(function(){
 //		alert(1);

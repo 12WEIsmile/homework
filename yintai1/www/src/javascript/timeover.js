@@ -26,6 +26,6 @@
 			sall="0"+sall;
 		}
 		
-		$(".time").html(dall+"天"+hall+":"+mall+":"+sall);
+		$(".time-shower").html(dall+"天"+hall+":"+mall+":"+sall);
 	}
 	

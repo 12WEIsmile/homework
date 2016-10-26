@@ -1,8 +1,10 @@
+//判断注册的对应格式
 $(function(){
 	$(".nametxt").click(function(){
 		$(this).addClass("stress");
 		return false;
 	})
+//	验证手机号
 	var renum=/^1[3,4,5,7,8]\d{9}$/
 	$("#RegisterName").change(function(){
 		var setName=$("#RegisterName").val();

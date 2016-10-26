@@ -17,8 +17,11 @@
 		<script src="../javascript/logo-info.js"></script>
 		<script	src="../javascript/lib/jquery.cookie.js"></script>
 		<script src="../javascript/cookie-register.js"></script>
-		<script src="../javascript/magnifier.js"></script>
-		<script src="../javascript/detail-zoom.js"></script>
+		<script src="../javascript/zoom-large.js"></script>		
+		<script src="../javascript/timeover.js"></script>
+		<!--<script src="../javascript/magnifier.js"></script>-->
+		<!--<script src="../javascript/detail-zoom.js"></script>-->
+		<script src="../javascript/purchase.js"></script>
 	</head>
 	<body>
 		<div id="hdtop">
@@ -877,7 +880,7 @@
 												<a href="###">男士睡衣</a>
 												<a href="###">睡裤</a>
 												<a href="###" style="color: #e5084f;">丝袜</a>
-												<a href="###" >短袜</a>
+												<a href="###">短袜</a>
 											</p>
 										</div>
 										<div class="sorts-repeat">
@@ -934,7 +937,7 @@
 				<p class="box-cart-strong">商品已成功添加到购物袋</p>
 				<p class="box-cart-info">你的购物袋中共有<span>1</span>件商品，共<em>16824.00</em>元</p>
 				<p class="box-cart-btn">
-					<a href="###" class="box-cart-pay l"></a>
+					<a href="../html/shopCart.html" class="box-cart-pay l"></a>
 					<a href="###" class="box-cart-clo l"></a>
 				</p>
 			</div>
@@ -953,15 +956,23 @@
 				<div class="y-pro-place l">					
 					<div class="Y_picBox l">
 						<div class="y-pro-tab">
-							<div class="magnifier-wrap">
-								<div class="one-mag l same-variety"></div>
+							<!--------------------放大镜的具体样式搭建-->
+							<div class="magnifier-wrap relative">
+								<!--<div class="one-mag l same-variety"></div>
 								<div class="two-mag l same-variety hide"></div>
 								<div class="three-mag l same-variety hide"></div>
-								<div class="four-mag l same-variety hide"></div>
+								<div class="four-mag l same-variety hide"></div>-->
+								<img src="../img/detail/pic1l.jpg" class="small-img">
+								<div class="glass absolute hide"></div>						
+								<div class="absolute bigImg hide">
+									<img  src="../img/detail/pic0big.jpg" class="absolute" />
+								</div>								
+																																							
 							</div>
+							<!--放大镜下的导航条-->
 							<ul class="ew-c-list">
 								<li class="l">
-									<a href="###" ><img src="../img/detail/pic1s.jpg"></a>
+									<a href="###" ><img src="../img/detail/pic1s.jpg" class="show-goods"></a>
 								</li>
 								<li class="l">
 									<a href="###" ><img src="../img/detail/pic2s.jpg"></a>									
@@ -973,15 +984,15 @@
 									<a href="###" ><img src="../img/detail/pic4s.jpg"></a>
 								</li>
 							</ul>
-						</div>
-						
-					</div>						
+						</div>						
+					</div>	
+					<!--右侧的商品详情-->
 					<div class="p-info r">
 						<h3 class="p-tit">MICHAEL KORS/迈克高仕 MK 女士 经典时尚手提单肩包</h3>
 						<div class="priceInfo">
 							<p class="YTPrice">
 								<span>银泰价：</span>
-								<strong class="yt-num">￥16824.<em>00</em></strong>
+								<strong class="yt-num"><em class="dis-price" style="font-weight: normal;">16824.00</em>￥</strong>
 								<em class="discount">7.6折</em>
 							</p>
 							<div class="marketPrice">参考价
@@ -992,16 +1003,21 @@
 							<dl>
 								<dt class="sel-show l">选择颜色：</dt>
 								<dd class="sel">
-									<div class="item-selected relative">
+									<div class="item-selected relative l">
 										<b class="absolute"></b>
 										<a href="###">
-											<img src="../img/detail/bag-pic.jpg" />
+											<img src="../img/detail/bag-pic.jpg" class="good-img" />
 											<span>黑色</span>
 										</a>
+									</div>
+									<!--关于倒计时-->
+									<div class="time-shower l" style="color:#e89340; font-size: 18px; padding-left: 20px; height: 43px; line-height: 43px;font-weight: bold;">
+										
 									</div>
 								</dd>
 							</dl>
 						</div>
+						<!--关于商品的增减-->
 						<div class="p-buy">
 							<div class="p-num l">
 								<input type="text" value="1" id="buynum" class="f1 l" />
@@ -1014,7 +1030,8 @@
 								<button class="buyit l"></button>
 								<button class="incart l cart-changecolor"></button>
 							</div>
-						</div>					
+						</div>	
+						<!---------------------------------->
 					</div>					
 					<div class="serviceInfo r">
 						<dl class="service">
@@ -1025,13 +1042,17 @@
                 				<span>免运费</span>           
 							</dd>
 						</dl>
-					</div>								
+					</div>	
+					<!----------------------------------------->
 				</div>
+				<!--右侧的logo-->
 				<div class="y-pro-cooper r">
 					<a href="###" class="y-pro-cooper-logo"></a>
 					<h4 class="y-pro-cooper-name"><a href="###">MICHAEL KORS</a></h4>
 				</div>
 			</div>
+			<!-------------------------------------------->
+			<!--关于详情页的nav与tab切换-->
 			<div id="main-con">
 				<div class="y-pro-desc l">
 					<div class="desc-car">
@@ -1069,8 +1090,8 @@
 				</div>
 				<div class="yt-side-list r"></div>
 			</div>
-			
-			<!--尾部-->
+			<!------------------------------------->
+		<!-----------------------尾部--------------------------->
 		<div id="ft">
 			<div class="itips">
 				<span class="service l">
@@ -1110,6 +1131,7 @@
 				</a>
 			</div>
 		</div>
+		<!----------------------------->
 	</div>
 	</body>
 </html>

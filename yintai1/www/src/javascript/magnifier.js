@@ -1,4 +1,6 @@
-// 传入待放大的 div的 jq对象 ，放大的图片路径 
+//放大镜的封装
+
+// 传入待放大的 div的 jq对象 ，放大的图片路径
 //Zoom($("#small"), "img/big.png");
 
 function Zoom(jqObj, detailimgSrc) {

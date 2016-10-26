@@ -6,7 +6,9 @@ body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,ol,dd,dt,a,img,input,span{
     margin: 0;
 }
 
-
+body{
+    font-size: $font-size-small;
+}
 img{
     border: 0;
     display: inline-block;

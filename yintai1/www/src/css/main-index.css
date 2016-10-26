@@ -22,6 +22,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, dl, ol, dd, dt, a, img, input, span {
   margin: 0;
 }
 
+body {
+  font-size: 12px;
+}
+
 img {
   border: 0;
   display: inline-block;
@@ -328,7 +332,10 @@ body {
   background: #000;
 }
 #hdmenu .top-menu .menu-cate .menu-allout dl {
-  height: 46px;
+  height: 47px;
+}
+#hdmenu .top-menu .menu-cate .menu-allout dl:hover dd {
+  display: block;
 }
 #hdmenu .top-menu .menu-cate .menu-allout dl dt {
   height: 30px;

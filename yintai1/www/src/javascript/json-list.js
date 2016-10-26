@@ -1,3 +1,4 @@
+//在列表页传json数据
 $(function(){
 	$.get("../json/list.json",function(data){	
 				$.each(data.items, function(i,n) {

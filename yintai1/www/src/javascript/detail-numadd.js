@@ -1,3 +1,4 @@
+//点击变背景
 $(function(){
 	$(".linknum1").hover(function(){
 		$(this).addClass("bg-position1");
