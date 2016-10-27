@@ -17,7 +17,7 @@ $(function() {
 			});
 		}
 	})
-
+//	判断账号是不是相同
 	function judgeRepeat(username) {
 		var flag = false;
 		$.each($msglist, function(i, n) {
@@ -27,6 +27,7 @@ $(function() {
 		})
 		return flag;
 	}
+	
 	$("#register").click(function() {
 		if(($("#RegisterName").val() == "") || ($("#Registeremail").val() == "") || ($("#RegisterSecretCode").val() == "") || ($("#RegisterConfirmSecretCode").val() == "")) {
 			//			alert("2");
@@ -41,7 +42,7 @@ $(function() {
 			}
 			$msglist.push(msg);
 			$.cookie("msg", JSON.stringify($msglist), {
-				expires: 30,
+				expires: 1,
 				path: '/'
 			});
 			//	计时跳转到登录界面

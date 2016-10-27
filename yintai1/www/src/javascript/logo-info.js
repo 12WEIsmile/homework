@@ -23,7 +23,7 @@ $(function() {
 		}
 		if($("#agreement").is(":checked")) {
 			$.cookie("logouser", loginName, {
-				expires: 7,
+				expires: 1,
 				path: '/'
 			});
 		} else {

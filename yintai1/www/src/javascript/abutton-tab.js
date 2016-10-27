@@ -1,6 +1,4 @@
-
 //关于detail的特效
-
 $(function(){
 //	关于购物车的下拉菜单
 	$(".y-desc-addcar").hover(function(){

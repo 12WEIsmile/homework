@@ -1,5 +1,4 @@
 //轮播图的jquery特效
-
 $(function(){
 	var len=$(".banner-ul li").length;//重点是在后面加一张图片
 	var index=0;//图片序号

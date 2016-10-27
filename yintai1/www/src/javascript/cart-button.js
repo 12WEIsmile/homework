@@ -9,9 +9,10 @@ $(function(){
 			}			
 		});		
 		$.cookie("goods", newCookie);
-		$(this).parent().parent().parent().remove();		
-	})	
-	
+		$(this).parent().parent().parent().remove();
+		$(".all-price").html(calcuMoney().toFixed(2));
+		
+	})		
 //	商品加减		
 	$(".nums-red").bind("click",function(){
 		var valbf = $(this).siblings(".pro-nums");
@@ -30,30 +31,26 @@ $(function(){
 		num++;
 		$(this).siblings(".pro-nums").val(num);
 //		setTotal(); 
-	})
-	
-	
+	})	
 	//	价格变动
 	$("#J-UPCheck").click(function(){
 		$(".J-willing").prop("checked",true);
-		$(".all-price").html(calcuMoney());
+		$(".all-price").html(calcuMoney().toFixed(2));
 	})			
 	$(".pro-nums").change(function(){
-		$(".all-price").html(calcuMoney());
+		$(".all-price").html(calcuMoney().toFixed(2));
 	})
 	$(".nums-add").click(function(){
-		$(".all-price").html(calcuMoney());
+		$(".all-price").html(calcuMoney().toFixed(2));
 	})
 	$(".nums-red").click(function(){
-		$(".all-price").html(calcuMoney());
+		$(".all-price").html(calcuMoney().toFixed(2));
 	})
 //	var flag=false;
 	$(".J-willing").bind("click",function(){
-		$(".all-price").html(calcuMoney());
+		$(".all-price").html(calcuMoney().toFixed(2));
 	})	
-//	alert(calcuMoney());
-	
-	
+//	alert(calcuMoney());	
 //	价格封装的函数
 	function calcuMoney() {
 		var money = 0;
