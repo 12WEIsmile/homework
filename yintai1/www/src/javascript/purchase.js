@@ -2,6 +2,7 @@ $(function() {
 	$.cookie.json = true;
 
 	$(".incart").bind("click", function() {
+//		alert($("#buynum").val());
 			var item = {
 				id: "sno_11",
 				info: $(".p-tit").html(),
@@ -17,6 +18,12 @@ $(function() {
 			}
 				cookieArr.push(item);
 				$.cookie("goods", cookieArr);
+				
+	})
+//	$("#buynum").change(function(){
+//		
+//		
+//	})
 				
 //			$.cookie("goods", {
 //					"item1": {
@@ -35,7 +42,7 @@ $(function() {
 //					}
 //				})
 				//			alert(1);
-		})
+		
 		//		var goods=$.cookie("goods");
 		//		alert(goods);
 		//		var path=goods.item1.path;
@@ -43,12 +50,12 @@ $(function() {
 		//		var info=goods.item1.info;
 		//		var price=goods.item1.price;
 		//		var num=goods.item1.num;
-	$.each($.cookie('goods'), function(n, i) {
-		var path = i.path;
-		alert(path);
-		var info = i.info;
-		var price = i.price;
-		var num = i.num;
+	$.each($.cookie('goods'), function(i, n) {
+		var path = n.path;
+//		alert(path);
+		var info = n.info;
+		var price = n.price;
+		var num = n.num;
 		$(".PayofFouCont").before("<div class='CommodityList'>" +
 			"<div class='category th-chk l'>" +
 			"<div style='margin-top: 14.5px;'>" +
@@ -79,7 +86,7 @@ $(function() {
 			"<div class='th-amount l'>" +
 			"<div class='pro-number'>" +
 			"<a href='###' class='nums-red'>-</a>" +
-			"<input type='text' class='pro-nums' value='1' />" +
+			"<input type='text' class='pro-nums' value="+num+" />" +
 			"<a href='###' class='nums-add'>+</a>" +
 			"</div>" +
 			"</div>" +

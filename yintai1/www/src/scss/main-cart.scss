@@ -6,9 +6,10 @@
     width: 100%;
     background: #eee;
     padding-top:20px ;
+    padding-bottom: 20px;
 }
 .bdwraper{
-    height: 784px;
+    overflow: hidden;
     margin: 0 auto;
     width: 940px;
     padding: 20px;
@@ -143,6 +144,7 @@
        
     }
     .CommodityList{
+            z-index: 1000;
             clear: both;
             overflow: hidden;
             display: block;
